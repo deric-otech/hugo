@@ -34,6 +34,9 @@ jobs:
     - name: Clean public directory
       run: rm -rf public
 
+    - name: Clone theme
+      run: git clone https://github.com/dillonzq/LoveIt.git themes/LoveIt
+      
     # Step 4 - Builds the site using the latest version of Hugo
     # Also specifies the theme we want to use
     - name: Build
