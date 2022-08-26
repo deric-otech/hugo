@@ -26,10 +26,11 @@ jobs:
 
     # Step 2 - Sets up the latest version of Hugo
     - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2
-      with:
-          hugo-version: 'v0.101.0'
-          extended: true
+#      uses: peaceiris/actions-hugo@v2
+#      with:
+#          hugo-version: 'v0.101.0'
+#          extended: true
+      run: sudo apt update && sudo apt -y install hugo
 
     # Step 3 - Clean and don't fail
     - name: Clean public directory
